@@ -227,6 +227,23 @@ h3 {
 	height: auto;
 }
 
+.experience__txt {
+	display: block;
+	margin: 3px 0;
+}
+
+.experience__link {
+	color: #000;
+	text-transform: uppercase;
+}
+
+@media (min-width: 560px) {
+	.experience__txt {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
 .works__wrap {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
