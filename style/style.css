@@ -52,7 +52,7 @@
 
 .html {
 	margin: 5px;
-	background-color: #17023a36;
+	background-color: #cdc7d7;
 }
 
 @media (min-width: 1042px) {
@@ -265,15 +265,26 @@ h3 {
 	text-transform: uppercase;
 }
 
-.heading {
-	margin-bottom: 20px;
-	text-align-last: left;
+.technical_support_service__items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
 }
 
-.technical_support_service__inner {
+@media (max-width: 425px) {
+	.technical_support_service__items {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.technical_support_service__box {
 	display: grid;
-	grid-template-columns: 300px 2fr;
-	grid-gap: 30px;
+	grid-row-gap: 20px;
+	justify-items: center;
+}
+
+.technical_support_service__link {
+	display: block;
 }
 
 .technical_support_service__link:hover {
@@ -282,6 +293,25 @@ h3 {
 
 .technical_support_service__img {
 	width: 100%;
+	border: 2px solid rgb(133, 127, 127);
+	border-radius: 10px;
+}
+
+.technical_support_service__button {
+	padding: 5px 10px;
+}
+
+.technical_support_service__list {
+	transition: 1s;
+	max-height: 1400px;
+	position: relative;
+}
+
+.technical_support_service__list--hidden {
+	max-height: 1px;
+	opacity: 0;
+	margin: 0;
+	position: fixed;
 }
 
 .works__wrap {
