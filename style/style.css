@@ -316,19 +316,31 @@ h3 {
 
 .works__wrap {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-gap: 10px;
 }
 
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 426px) {
 	.works__wrap {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
-@media (min-width: 1024px) {
-	.works__wrap {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+.works__link {
+	display: grid;
+	grid-column-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	text-decoration: none;
+	color: #000;
+}
+
+.works__link p {
+	margin: 0;
+}
+
+@media (max-width:767px) {
+	.works__link {
+		grid-template-columns: 1fr;
 	}
 }
 
